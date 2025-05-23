@@ -1,0 +1,156 @@
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.attribution {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    width: 450px;
+    min-width: 375px;
+    height: 650px;
+    border-radius: 20px;
+
+    margin: 50px;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.order {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-weight: 900;
+
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: rgb(79, 0, 182);
+    font-size: 16px;
+    font-weight: 900;
+    
+    text-align: center;
+    text-decoration: underline;
+    align-content: center;
+    padding-right: 30px;
+
+    grid-row: span 2;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+.price {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.music > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+
+    background-color: hsl(225, 100%, 98%);
+    height: 80px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.annual {
+    text-align: left;
+    align-content: center;
+}
+
+.icon {
+    grid-row: span 2;
+    align-content: center;
+    padding: 20%;
+    object-fit: contain;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+    font-size: 16px;
+
+    box-shadow: 0px 20px 20px rgb(213, 195, 255);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    align-content: center;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: none;
+        background-color: hsl(225, 100%, 94%);
+        height: 100%;
+        width: 100%;
+    }
+
+    /* .container {
+        height: 100%;
+        width: 100%;
+    } */
+
+}
